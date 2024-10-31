@@ -169,8 +169,20 @@ const Breadcrumbs = ({
                 variant="h6"
                 sx={{ textDecoration: 'none' }}
               >
-                {icons && <HomeOutlined style={iconSX} />}
-                {icon && !icons && <HomeFilled style={{ ...iconSX, marginRight: 0 }} />}
+                {icons && (
+                  <HomeOutlined
+                    style={iconSX}
+                    onPointerEnterCapture={undefined}
+                    onPointerLeaveCapture={undefined}
+                  />
+                )}
+                {icon && !icons && (
+                  <HomeFilled
+                    style={{ ...iconSX, marginRight: 0 }}
+                    onPointerEnterCapture={undefined}
+                    onPointerLeaveCapture={undefined}
+                  />
+                )}
                 {(!icon || icons) && 'Home'}
               </Typography>
               {mainContent}
@@ -234,8 +246,20 @@ const Breadcrumbs = ({
                   variant="h6"
                   sx={{ textDecoration: 'none' }}
                 >
-                  {icons && <HomeOutlined style={iconSX} />}
-                  {icon && !icons && <HomeFilled style={{ ...iconSX, marginRight: 0 }} />}
+                  {icons && (
+                    <HomeOutlined
+                      style={iconSX}
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    />
+                  )}
+                  {icon && !icons && (
+                    <HomeFilled
+                      style={{ ...iconSX, marginRight: 0 }}
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    />
+                  )}
                   {(!icon || icons) && 'Home'}
                 </Typography>
                 {mainContent}

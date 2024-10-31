@@ -307,7 +307,11 @@ const NavGroup = ({
             {itemIcon && (
               <ListItemIcon sx={{ minWidth: 28 }}>
                 {currentItem.id === lastItemId ? (
-                  <DownOutlined style={{ fontSize: 20, stroke: '1.5' }} />
+                  <DownOutlined
+                    style={{ fontSize: 20, stroke: '1.5' }}
+                    onPointerEnterCapture={undefined}
+                    onPointerLeaveCapture={undefined}
+                  />
                 ) : (
                   itemIcon
                 )}
@@ -329,9 +333,17 @@ const NavGroup = ({
               }
             />
             {openMini ? (
-              <DownOutlined style={{ fontSize: 16, stroke: '1.5' }} />
+              <DownOutlined
+                style={{ fontSize: 16, stroke: '1.5' }}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              />
             ) : (
-              <RightOutlined style={{ fontSize: 16, stroke: '1.5' }} />
+              <RightOutlined
+                style={{ fontSize: 16, stroke: '1.5' }}
+                onPointerEnterCapture={undefined}
+                onPointerLeaveCapture={undefined}
+              />
             )}
             {anchorEl && (
               <PopperStyled

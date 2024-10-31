@@ -27,7 +27,10 @@ const SettingTab = () => {
         onClick={(event: React.MouseEvent<HTMLDivElement>) => handleListItemClick(event, 0)}
       >
         <ListItemIcon>
-          <QuestionCircleOutlined />
+          <QuestionCircleOutlined
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          />
         </ListItemIcon>
         <ListItemText primary="Support" />
       </ListItemButton>
@@ -36,7 +39,7 @@ const SettingTab = () => {
         onClick={(event: React.MouseEvent<HTMLDivElement>) => handleListItemClick(event, 1)}
       >
         <ListItemIcon>
-          <UserOutlined />
+          <UserOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </ListItemIcon>
         <ListItemText primary="Account Settings" />
       </ListItemButton>
@@ -45,7 +48,7 @@ const SettingTab = () => {
         onClick={(event: React.MouseEvent<HTMLDivElement>) => handleListItemClick(event, 2)}
       >
         <ListItemIcon>
-          <LockOutlined />
+          <LockOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </ListItemIcon>
         <ListItemText primary="Privacy Center" />
       </ListItemButton>
@@ -54,7 +57,7 @@ const SettingTab = () => {
         onClick={(event: React.MouseEvent<HTMLDivElement>) => handleListItemClick(event, 3)}
       >
         <ListItemIcon>
-          <CommentOutlined />
+          <CommentOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </ListItemIcon>
         <ListItemText primary="Feedback" />
       </ListItemButton>
@@ -63,7 +66,10 @@ const SettingTab = () => {
         onClick={(event: React.MouseEvent<HTMLDivElement>) => handleListItemClick(event, 4)}
       >
         <ListItemIcon>
-          <UnorderedListOutlined />
+          <UnorderedListOutlined
+            onPointerEnterCapture={undefined}
+            onPointerLeaveCapture={undefined}
+          />
         </ListItemIcon>
         <ListItemText primary="History" />
       </ListItemButton>

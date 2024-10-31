@@ -44,8 +44,20 @@ const AnalyticEcommerce = ({
               color={color}
               icon={
                 <>
-                  {!isLoss && <RiseOutlined style={{ fontSize: '0.75rem', color: 'inherit' }} />}
-                  {isLoss && <FallOutlined style={{ fontSize: '0.75rem', color: 'inherit' }} />}
+                  {!isLoss && (
+                    <RiseOutlined
+                      style={{ fontSize: '0.75rem', color: 'inherit' }}
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    />
+                  )}
+                  {isLoss && (
+                    <FallOutlined
+                      style={{ fontSize: '0.75rem', color: 'inherit' }}
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    />
+                  )}
                 </>
               }
               label={`${percentage}%`}

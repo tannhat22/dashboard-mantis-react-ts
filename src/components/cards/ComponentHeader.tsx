@@ -27,7 +27,11 @@ const ComponentHeader = ({ title, caption, directory, link }: Props) => (
       {directory && (
         <Grid item xs={12}>
           <Typography variant="caption" color="textSecondary">
-            <NodeExpandOutlined style={{ marginRight: 10 }} />
+            <NodeExpandOutlined
+              style={{ marginRight: 10 }}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            />
             {directory}
           </Typography>
         </Grid>
@@ -35,7 +39,11 @@ const ComponentHeader = ({ title, caption, directory, link }: Props) => (
       {link && (
         <Grid item xs={12}>
           <Link variant="caption" color="primary" href={link} target="_blank">
-            <GlobalOutlined style={{ marginRight: 10 }} />
+            <GlobalOutlined
+              style={{ marginRight: 10 }}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            />
             {link}
           </Link>
         </Grid>

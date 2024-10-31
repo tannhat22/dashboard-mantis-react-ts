@@ -31,7 +31,7 @@ const ProfileTab = ({ handleLogout }: Props) => {
         onClick={(event: React.MouseEvent<HTMLDivElement>) => handleListItemClick(event, 0)}
       >
         <ListItemIcon>
-          <EditOutlined />
+          <EditOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </ListItemIcon>
         <ListItemText primary="Edit Profile" />
       </ListItemButton>
@@ -40,7 +40,7 @@ const ProfileTab = ({ handleLogout }: Props) => {
         onClick={(event: React.MouseEvent<HTMLDivElement>) => handleListItemClick(event, 1)}
       >
         <ListItemIcon>
-          <UserOutlined />
+          <UserOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </ListItemIcon>
         <ListItemText primary="View Profile" />
       </ListItemButton>
@@ -50,7 +50,7 @@ const ProfileTab = ({ handleLogout }: Props) => {
         onClick={(event: React.MouseEvent<HTMLDivElement>) => handleListItemClick(event, 3)}
       >
         <ListItemIcon>
-          <ProfileOutlined />
+          <ProfileOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </ListItemIcon>
         <ListItemText primary="Social Profile" />
       </ListItemButton>
@@ -59,13 +59,13 @@ const ProfileTab = ({ handleLogout }: Props) => {
         onClick={(event: React.MouseEvent<HTMLDivElement>) => handleListItemClick(event, 4)}
       >
         <ListItemIcon>
-          <WalletOutlined />
+          <WalletOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </ListItemIcon>
         <ListItemText primary="Billing" />
       </ListItemButton>
       <ListItemButton selected={selectedIndex === 2} onClick={handleLogout}>
         <ListItemIcon>
-          <LogoutOutlined />
+          <LogoutOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </ListItemIcon>
         <ListItemText primary="Logout" />
       </ListItemButton>

@@ -82,7 +82,7 @@ const Message = () => {
         aria-haspopup="true"
         onClick={handleToggle}
       >
-        <MailOutlined />
+        <MailOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
       </IconButton>
       <Popper
         placement={matchesXs ? 'bottom' : 'bottom-end'}
@@ -132,7 +132,10 @@ const Message = () => {
                   content={false}
                   secondary={
                     <IconButton size="small" onClick={handleToggle}>
-                      <CloseOutlined />
+                      <CloseOutlined
+                        onPointerEnterCapture={undefined}
+                        onPointerLeaveCapture={undefined}
+                      />
                     </IconButton>
                   }
                 >

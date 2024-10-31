@@ -146,8 +146,20 @@ const Breadcrumbs = ({
                   variant="h6"
                   sx={{ textDecoration: 'none' }}
                 >
-                  {icons && <HomeOutlined style={iconSX} />}
-                  {icon && !icons && <HomeFilled style={{ ...iconSX, marginRight: 0 }} />}
+                  {icons && (
+                    <HomeOutlined
+                      style={iconSX}
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    />
+                  )}
+                  {icon && !icons && (
+                    <HomeFilled
+                      style={{ ...iconSX, marginRight: 0 }}
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    />
+                  )}
                   {(!icon || icons) && main.title}
                 </Typography>
                 {subItems &&
@@ -169,7 +181,9 @@ const Breadcrumbs = ({
             </Grid>
             {title && (
               <Grid item sx={{ mb: card === false ? 0.25 : 1.5 }}>
-                <Typography variant="h2">{section ? `${translate(section)}` : last.title}</Typography>
+                <Typography variant="h2">
+                  {section ? `${translate(section)}` : last.title}
+                </Typography>
               </Grid>
             )}
           </Grid>

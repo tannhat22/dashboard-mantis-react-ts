@@ -210,6 +210,8 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }: Props) => {
                       color:
                         theme.palette.mode === ThemeMode.DARK ? 'inherit' : theme.palette.grey[100],
                     }}
+                    onPointerEnterCapture={undefined}
+                    onPointerLeaveCapture={undefined}
                   />
                 </IconButton>
               </Stack>
@@ -235,7 +237,10 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }: Props) => {
                     <Link style={{ textDecoration: 'none' }} href="/login" target="_blank">
                       <ListItemButton component="span">
                         <ListItemIcon>
-                          <LineOutlined />
+                          <LineOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
                         </ListItemIcon>
                         <ListItemText
                           primary="Dashboard"
@@ -250,7 +255,10 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }: Props) => {
                     >
                       <ListItemButton component="span">
                         <ListItemIcon>
-                          <LineOutlined />
+                          <LineOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
                         </ListItemIcon>
                         <ListItemText
                           primary="All Components"
@@ -265,7 +273,10 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }: Props) => {
                     >
                       <ListItemButton component="span">
                         <ListItemIcon>
-                          <LineOutlined />
+                          <LineOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
                         </ListItemIcon>
                         <ListItemText
                           primary="Free Version"
@@ -280,7 +291,10 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }: Props) => {
                     >
                       <ListItemButton component="span">
                         <ListItemIcon>
-                          <LineOutlined />
+                          <LineOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
                         </ListItemIcon>
                         <ListItemText
                           primary="Documentation"
@@ -295,7 +309,10 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }: Props) => {
                     >
                       <ListItemButton component="span">
                         <ListItemIcon>
-                          <LineOutlined />
+                          <LineOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
                         </ListItemIcon>
                         <ListItemText
                           primary="Support"
@@ -310,7 +327,10 @@ const Header = ({ handleDrawerOpen, layout = 'landing', ...others }: Props) => {
                     >
                       <ListItemButton component="span">
                         <ListItemIcon>
-                          <LineOutlined />
+                          <LineOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
                         </ListItemIcon>
                         <ListItemText
                           primary="Purchase Now"

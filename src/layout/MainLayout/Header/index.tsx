@@ -53,7 +53,14 @@ const Header = () => {
             ml: { xs: 0, lg: -2 },
           }}
         >
-          {!drawerOpen ? <MenuUnfoldOutlined /> : <MenuFoldOutlined />}
+          {!drawerOpen ? (
+            <MenuUnfoldOutlined
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            />
+          ) : (
+            <MenuFoldOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
+          )}
         </IconButton>
       ) : null}
       {headerContent}

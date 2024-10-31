@@ -82,7 +82,10 @@ const Snackbar = () => {
                 onClick={handleClose}
                 sx={{ mt: 0.25 }}
               >
-                <CloseOutlined />
+                <CloseOutlined
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
+                />
               </IconButton>
             </>
           }
@@ -117,7 +120,10 @@ const Snackbar = () => {
                     color={alert.color}
                     onClick={handleClose}
                   >
-                    <CloseOutlined />
+                    <CloseOutlined
+                      onPointerEnterCapture={undefined}
+                      onPointerLeaveCapture={undefined}
+                    />
                   </IconButton>
                 )}
               </>

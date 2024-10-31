@@ -47,10 +47,34 @@ const Notistack = ({ children }: any) => {
       iconVariant={
         snackbar.iconVariant === 'useemojis'
           ? {
-              success: <CheckCircleOutlined style={iconSX} />,
-              error: <CloseCircleOutlined style={iconSX} />,
-              warning: <WarningOutlined style={iconSX} />,
-              info: <InfoCircleOutlined style={iconSX} />,
+              success: (
+                <CheckCircleOutlined
+                  style={iconSX}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
+                />
+              ),
+              error: (
+                <CloseCircleOutlined
+                  style={iconSX}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
+                />
+              ),
+              warning: (
+                <WarningOutlined
+                  style={iconSX}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
+                />
+              ),
+              info: (
+                <InfoCircleOutlined
+                  style={iconSX}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
+                />
+              ),
             }
           : undefined
       }

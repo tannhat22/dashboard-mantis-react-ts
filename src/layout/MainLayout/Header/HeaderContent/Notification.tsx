@@ -90,7 +90,7 @@ const Notification = () => {
         onClick={handleToggle}
       >
         <Badge badgeContent={read} color="primary">
-          <BellOutlined />
+          <BellOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </Badge>
       </IconButton>
       <Popper
@@ -141,7 +141,11 @@ const Notification = () => {
                       {read > 0 && (
                         <Tooltip title="Mark as all read">
                           <IconButton color="success" size="small" onClick={() => setRead(0)}>
-                            <CheckCircleOutlined style={{ fontSize: '1.15rem' }} />
+                            <CheckCircleOutlined
+                              style={{ fontSize: '1.15rem' }}
+                              onPointerEnterCapture={undefined}
+                              onPointerLeaveCapture={undefined}
+                            />
                           </IconButton>
                         </Tooltip>
                       )}
@@ -168,7 +172,10 @@ const Notification = () => {
                             bgcolor: 'success.lighter',
                           }}
                         >
-                          <GiftOutlined />
+                          <GiftOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
                         </Avatar>
                       </ListItemAvatar>
                       <ListItemText
@@ -198,7 +205,10 @@ const Notification = () => {
                             bgcolor: 'primary.lighter',
                           }}
                         >
-                          <MessageOutlined />
+                          <MessageOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
                         </Avatar>
                       </ListItemAvatar>
                       <ListItemText
@@ -227,7 +237,10 @@ const Notification = () => {
                             bgcolor: 'error.lighter',
                           }}
                         >
-                          <SettingOutlined />
+                          <SettingOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
                         </Avatar>
                       </ListItemAvatar>
                       <ListItemText

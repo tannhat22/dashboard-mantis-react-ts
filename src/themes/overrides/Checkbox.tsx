@@ -102,7 +102,12 @@ export default function Checkbox(theme: Theme) {
               position: 'relative',
             }}
           >
-            <CheckSquareFilled className="filled" style={{ position: 'absolute' }} />
+            <CheckSquareFilled
+              className="filled"
+              style={{ position: 'absolute' }}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            />
           </Box>
         ),
         indeterminateIcon: (
@@ -117,7 +122,12 @@ export default function Checkbox(theme: Theme) {
               position: 'relative',
             }}
           >
-            <MinusSquareFilled className="filled" style={{ position: 'absolute' }} />
+            <MinusSquareFilled
+              className="filled"
+              style={{ position: 'absolute' }}
+              onPointerEnterCapture={undefined}
+              onPointerLeaveCapture={undefined}
+            />
           </Box>
         ),
       },

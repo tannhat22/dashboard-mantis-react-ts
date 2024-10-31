@@ -14,7 +14,7 @@ const Search = () => (
         id="header-search"
         startAdornment={
           <InputAdornment position="start" sx={{ mr: -0.5 }}>
-            <SearchOutlined />
+            <SearchOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
           </InputAdornment>
         }
         aria-describedby="header-search-text"

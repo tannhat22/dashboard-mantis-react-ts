@@ -63,7 +63,7 @@ const MobileSection = () => {
           color="secondary"
           variant="light"
         >
-          <MoreOutlined />
+          <MoreOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
         </IconButton>
       </Box>
       <Popper

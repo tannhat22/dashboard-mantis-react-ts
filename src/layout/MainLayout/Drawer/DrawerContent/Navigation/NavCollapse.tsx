@@ -246,7 +246,16 @@ const NavCollapse = ({
     }
   });
   const isSelected = selected === menu.id;
-  const borderIcon = level === 1 ? <BorderOutlined style={{ fontSize: '1rem' }} /> : false;
+  const borderIcon =
+    level === 1 ? (
+      <BorderOutlined
+        style={{ fontSize: '1rem' }}
+        onPointerEnterCapture={undefined}
+        onPointerLeaveCapture={undefined}
+      />
+    ) : (
+      false
+    );
   const Icon = menu.icon!;
   const menuIcon = menu.icon ? (
     <Icon style={{ fontSize: drawerOpen ? '1rem' : '1.25rem' }} />
@@ -358,9 +367,15 @@ const NavCollapse = ({
               (miniMenuOpened || open ? (
                 <UpOutlined
                   style={{ fontSize: '0.625rem', marginLeft: 1, color: theme.palette.primary.main }}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
                 />
               ) : (
-                <DownOutlined style={{ fontSize: '0.625rem', marginLeft: 1 }} />
+                <DownOutlined
+                  style={{ fontSize: '0.625rem', marginLeft: 1 }}
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
+                />
               ))}
 
             {!drawerOpen && (
@@ -463,7 +478,14 @@ const NavCollapse = ({
                   </Typography>
                 }
               />
-              {miniMenuOpened ? <RightOutlined /> : <DownOutlined />}
+              {miniMenuOpened ? (
+                <RightOutlined
+                  onPointerEnterCapture={undefined}
+                  onPointerLeaveCapture={undefined}
+                />
+              ) : (
+                <DownOutlined onPointerEnterCapture={undefined} onPointerLeaveCapture={undefined} />
+              )}
             </Box>
 
             {anchorEl && (

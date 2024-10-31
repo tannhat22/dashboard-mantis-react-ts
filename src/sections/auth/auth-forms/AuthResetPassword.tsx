@@ -139,7 +139,17 @@ const AuthResetPassword = () => {
                         edge="end"
                         color="secondary"
                       >
-                        {showPassword ? <EyeOutlined /> : <EyeInvisibleOutlined />}
+                        {showPassword ? (
+                          <EyeOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
+                        ) : (
+                          <EyeInvisibleOutlined
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
+                        )}
                       </IconButton>
                     </InputAdornment>
                   }

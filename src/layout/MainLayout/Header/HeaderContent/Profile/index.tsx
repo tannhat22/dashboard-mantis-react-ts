@@ -186,7 +186,10 @@ const Profile = () => {
                             sx={{ color: 'text.primary' }}
                             onClick={handleLogout}
                           >
-                            <LogoutOutlined />
+                            <LogoutOutlined
+                              onPointerEnterCapture={undefined}
+                              onPointerLeaveCapture={undefined}
+                            />
                           </IconButton>
                         </Tooltip>
                       </Grid>
@@ -208,7 +211,13 @@ const Profile = () => {
                           alignItems: 'center',
                           textTransform: 'capitalize',
                         }}
-                        icon={<UserOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
+                        icon={
+                          <UserOutlined
+                            style={{ marginBottom: 0, marginRight: '10px' }}
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
+                        }
                         label="Profile"
                         {...a11yProps(0)}
                       />
@@ -220,7 +229,13 @@ const Profile = () => {
                           alignItems: 'center',
                           textTransform: 'capitalize',
                         }}
-                        icon={<SettingOutlined style={{ marginBottom: 0, marginRight: '10px' }} />}
+                        icon={
+                          <SettingOutlined
+                            style={{ marginBottom: 0, marginRight: '10px' }}
+                            onPointerEnterCapture={undefined}
+                            onPointerLeaveCapture={undefined}
+                          />
+                        }
                         label="Setting"
                         {...a11yProps(1)}
                       />

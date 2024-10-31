@@ -174,7 +174,12 @@ const FooterBlock = ({ isFull }: showProps) => {
                         <Button
                           size="large"
                           variant="contained"
-                          endIcon={<SendOutlined />}
+                          endIcon={
+                            <SendOutlined
+                              onPointerEnterCapture={undefined}
+                              onPointerLeaveCapture={undefined}
+                            />
+                          }
                           component={Link}
                           href="https://codedthemes.gitbook.io/mantis/roadmap"
                           target="_blank"
