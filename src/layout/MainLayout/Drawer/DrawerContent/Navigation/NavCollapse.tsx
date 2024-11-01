@@ -108,7 +108,8 @@ const NavCollapse = ({
     setSelectedLevel(level);
     if (drawerOpen) {
       setOpen(!open);
-      setSelected(!selected ? menu.id : null);
+      // setSelected(!selected ? menu.id : null);
+      setSelected(menu.id);
       setSelectedItems(!selected ? menu.id : '');
       if (menu.url) Navigation(`${menu.url}`);
     } else {
